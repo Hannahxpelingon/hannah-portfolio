@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hannah Pelingon — UI/UX Designer</title>
+<meta name="description" content="Portfolio of Hannah Pelingon, UI/UX Designer studying User Experience & Interaction Design at Drexel University.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">hp.</a>
+
+    <nav class="nav-links" id="navLinks">
+      <div class="nav-dropdown" id="navDropdown">
+        <button class="nav-dropdown-btn" id="navDropdownBtn" aria-haspopup="true" aria-expanded="false">
+          Project <span class="nav-caret">⌄</span>
+        </button>
+        <div class="nav-dropdown-menu" id="navDropdownMenu">
+          <a href="#proj-two">Freedom Fight Dashboard</a>
+          <a href="#proj-three">IVM Thumbnail System</a>
+          <a href="#proj-mc3">MC3 Dashboard Redesign</a>
+        </div>
+      </div>
+      <a href="#about" data-nav>About</a>
+      <a href="#resume" data-nav>Resume</a>
+      <a href="#contact" data-nav>Contact</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <h1 class="hero-title" data-reveal>Hannah Pelingon<span class="hero-dot">.</span></h1>
+    <p class="hero-sub" data-reveal>Welcome to my playground of creative things.</p>
+
+    <div class="hero-currently" data-reveal>
+      <p class="hero-currently-label">currently</p>
+      <p class="hero-currently-value">Learning more @ Drexel University</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WORK (alternating project rows) ===== -->
+<section class="work" id="work">
+
+  <!-- Project 1: Freedom Fight Dashboard Design (case study) -->
+  <div class="project-row" id="proj-two" data-reveal data-accent="two">
+    <div class="project-copy">
+      <div class="project-logo project-logo--ff">
+        <img src="assets/logos/freedom-fight-logo.png" alt="The Freedom Fight logo" class="project-logo-img">
+      </div>
+      <h3 class="project-headline">
+        <span class="accent">Mobile</span> flows, rebuilt for<br>
+        a connected <span class="accent">desktop</span> experience.
+      </h3>
+      <p class="project-desc">
+        Freedom Fight pairs educational courses with community and accountability tools. Working from
+        research, I took a holistic view of how the program's features connect, then translated its
+        mobile designs into a desktop experience — bringing check-ins, messages, and progress into one
+        branded dashboard.
+      </p>
+      <p class="project-tags">DESKTOP &#47;&#47; UX RESEARCH &#47;&#47; DESIGN SYSTEM</p>
+    </div>
+    <div class="project-media">
+      <a href="assets/work/freedom-fight/01-dashboard-home.png" class="project-media-frame">
+        <img src="assets/work/freedom-fight/01-dashboard-home.png" alt="Freedom Fight desktop dashboard with check-ins, messages, and program path">
+      </a>
+      <div class="project-gallery project-gallery--wide">
+        <a href="assets/work/freedom-fight/02-checkin-emotions.png">
+          <img src="assets/work/freedom-fight/02-checkin-emotions.png" alt="Daily check-in emotion selector">
+        </a>
+        <a href="assets/work/freedom-fight/03-checkin-zone.png">
+          <img src="assets/work/freedom-fight/03-checkin-zone.png" alt="Daily check-in zone selection: recovery, danger, relapse">
+        </a>
+        <a href="assets/work/freedom-fight/04-checkin-faster-scale.png">
+          <img src="assets/work/freedom-fight/04-checkin-faster-scale.png" alt="Daily check-in FASTER scale behavior checklist">
+        </a>
+        <a href="assets/work/freedom-fight/05-courses-dashboard.png">
+          <img src="assets/work/freedom-fight/05-courses-dashboard.png" alt="Courses dashboard with sidebar navigation">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 2: Impact Video Ministries Thumbnail System -->
+  <div class="project-row project-row--reverse" id="proj-three" data-reveal data-accent="three">
+    <div class="project-copy">
+      <div class="project-logo project-logo--ivm">
+        <img src="assets/logos/ivm-logo.png" alt="Impact Video Ministries logo" class="project-logo-img">
+      </div>
+      <h3 class="project-headline">
+        <span class="accent">One</span> template, dozens of<br>
+        on-<span class="accent">brand</span> variations.
+      </h3>
+      <p class="project-desc">
+        Impact Video Ministries publishes to over a million subscribers, so thumbnails needed to be
+        fast to produce and instantly recognizable. I designed a reusable layout — headline, eyebrow,
+        ribbon tag, and character illustration — that drops into a new color palette for every video
+        without losing consistency.
+      </p>
+      <p class="project-tags">YOUTUBE &#47;&#47; THUMBNAIL DESIGN &#47;&#47; DESIGN SYSTEM</p>
+    </div>
+    <div class="project-media">
+      <a href="assets/work/ivm-thumbnails/01-white.png" class="project-media-frame">
+        <img src="assets/work/ivm-thumbnails/01-white.png" alt="Impact Video Ministries thumbnail template, white variant">
+      </a>
+      <div class="project-gallery">
+        <a href="assets/work/ivm-thumbnails/02-white-nobar.png">
+          <img src="assets/work/ivm-thumbnails/02-white-nobar.png" alt="Thumbnail template, white variant without ribbon tag">
+        </a>
+        <a href="assets/work/ivm-thumbnails/03-black-crop.png">
+          <img src="assets/work/ivm-thumbnails/03-black-crop.png" alt="Thumbnail template, cropped character variant">
+        </a>
+        <a href="assets/work/ivm-thumbnails/04-orange-diagonal.png">
+          <img src="assets/work/ivm-thumbnails/04-orange-diagonal.png" alt="Thumbnail template, orange diagonal split variant">
+        </a>
+        <a href="assets/work/ivm-thumbnails/05-red-diagonal.png">
+          <img src="assets/work/ivm-thumbnails/05-red-diagonal.png" alt="Thumbnail template, red diagonal split variant">
+        </a>
+        <a href="assets/work/ivm-thumbnails/06-orange-solid.png">
+          <img src="assets/work/ivm-thumbnails/06-orange-solid.png" alt="Thumbnail template, solid orange variant">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 3: MC3 (real case study) -->
+  <div class="project-row" id="proj-mc3" data-reveal data-accent="mc3">
+    <div class="project-copy">
+      <div class="project-logo project-logo--mc3">
+        <img src="assets/logos/mc3-logo.svg" alt="Montgomery County Community College logo" class="project-logo-img">
+      </div>
+      <h3 class="project-headline">
+        <span class="accent">Canvas</span> to a brighter<br>
+        <span class="accent">dashboard</span> experience.
+      </h3>
+      <p class="project-desc">
+        The course dashboard's quick-links leaned on dull, dark colors with little visual hierarchy.
+        I rebuilt them using MC3's own brand palette and icons relevant to each destination, so students
+        can recognize a link at a glance.
+      </p>
+      <p class="project-tags">DESKTOP &#47;&#47; UI DESIGN &#47;&#47; DESIGN SYSTEM</p>
+    </div>
+    <div class="project-media">
+      <a href="assets/work/mc3-dashboard/04-landing-final.png" class="project-media-frame">
+        <img src="assets/work/mc3-dashboard/04-landing-final.png" alt="Final MC3 Canvas dashboard landing page redesign">
+      </a>
+      <div class="project-gallery">
+        <a href="assets/work/mc3-dashboard/01-quicklinks-palette.png">
+          <img src="assets/work/mc3-dashboard/01-quicklinks-palette.png" alt="Palette-driven button component">
+        </a>
+        <a href="assets/work/mc3-dashboard/02-landing-color.png">
+          <img src="assets/work/mc3-dashboard/02-landing-color.png" alt="Full landing page layout">
+        </a>
+        <a href="assets/work/mc3-dashboard/03-landing-mono.png">
+          <img src="assets/work/mc3-dashboard/03-landing-mono.png" alt="Monochrome comparison test">
+        </a>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ===== RESUME ===== -->
+<section class="resume" id="resume">
+  <div class="section-inner">
+
+    <div class="resume-intro" data-reveal>
+      <div>
+        <p class="eyebrow">Resume</p>
+        <h2 class="section-title">Experience &amp; Education<span class="italic">.</span></h2>
+      </div>
+      <a href="assets/Hannah-Pelingon-Resume.pdf" class="btn btn-primary" download>
+        Download Résumé (PDF)
+      </a>
+    </div>
+
+    <!-- Experience -->
+    <div class="resume-block" data-reveal>
+      <h3 class="resume-block-title">Experience</h3>
+
+      <div class="timeline-item">
+        <div class="timeline-meta">
+          <p class="timeline-date">April 2024 – September 2024<br>March 2025 – September 2025</p>
+          <p class="timeline-loc">Seattle, WA (Remote)</p>
+        </div>
+        <div>
+          <h4 class="timeline-title">User Interface Intern — Shy. Design</h4>
+          <ul class="timeline-list">
+            <li>Translated mobile wireframes into responsive desktop interfaces for an educational wellness program, maintaining a cohesive design system across features and devices.</li>
+            <li>Created a scalable YouTube thumbnail design system for a channel with over one million subscribers, ensuring visual consistency and strong visual hierarchy.</li>
+            <li>Mapped and designed user flows for premium groups in an education wellness program, guiding users from application submission to group onboarding.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-meta">
+          <p class="timeline-date">March 2023 – April 2023</p>
+          <p class="timeline-loc">Blue Bell, PA</p>
+        </div>
+        <div>
+          <h4 class="timeline-title">Visual Designer — Montgomery County Community College</h4>
+          <ul class="timeline-list">
+            <li>Redesigned the Canvas course dashboard to improve usability, appeal, and clarity for college students and faculty.</li>
+            <li>Increased student engagement to 1,000+ interactions by integrating a streamlined shortcut navigation system.</li>
+            <li>Designed navigation buttons using accessibility-friendly color contrast and sizing to support an inclusive user experience.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-meta">
+          <p class="timeline-date">February 2023 – Present</p>
+          <p class="timeline-loc">King of Prussia, PA</p>
+        </div>
+        <div>
+          <h4 class="timeline-title">Supervisor — UNIQLO</h4>
+          <ul class="timeline-list">
+            <li>Exceeded weekly sales targets by 100%+ as a product division leader by analyzing merchandising potential and implementing action plans to optimize product placement in store ranking.</li>
+            <li>Led monthly live streaming shopping sessions on the UNIQLO app and @uniqlousa Instagram, boosting user engagement to promote collaborations and curate seasonal style guides.</li>
+            <li>Contributed product development insights by assessing performance of existing products and suggesting new ideas influenced by customer insights, sales standings, and in-store observations.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div class="resume-block" data-reveal>
+      <h3 class="resume-block-title">Education</h3>
+      <div class="edu-grid">
+        <div class="edu-item">
+          <p class="edu-school">Drexel University</p>
+          <p class="edu-degree">B.S. in User Experience and Interaction Design</p>
+          <p class="edu-date">Expected June 2028</p>
+        </div>
+        <div class="edu-item">
+          <p class="edu-school">Montgomery County Community College</p>
+          <p class="edu-degree">A.A.S. in Web Development and Design</p>
+          <p class="edu-date">2023</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quick facts -->
+    <div class="resume-block" data-reveal>
+      <div class="facts-grid">
+        <div>
+          <p class="fact-label">Tools</p>
+          <p class="fact-list">Figma<br>Framer<br>Illustrator<br>Photoshop<br>InDesign<br>HTML5 / CSS3<br>JavaScript<br>Java<br>React</p>
+        </div>
+        <div>
+          <p class="fact-label">Skills</p>
+          <p class="fact-list">Ideation<br>UX Strategy<br>User Research<br>Visual Design<br>Design Systems<br>Web Development<br>Wireframing<br>Prototyping</p>
+        </div>
+        <div>
+          <p class="fact-label">Languages</p>
+          <p class="fact-list">English<br>Tagalog (Filipino)</p>
+        </div>
+        <div>
+          <p class="fact-label">Interests</p>
+          <p class="fact-list">Community Volunteering<br>Travel<br>Badminton<br>Cooking</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="about" id="about">
+  <div class="section-inner about-grid">
+    <div class="about-media" data-reveal>
+      <div class="about-photo">
+        <img src="assets/photos/hannah.jpg" alt="Hannah Pelingon">
+      </div>
+      <div class="about-card">
+        <p class="about-card-label">Based in</p>
+        <p class="about-card-value">Philadelphia, PA</p>
+      </div>
+    </div>
+
+    <div class="about-copy" data-reveal>
+      <p class="eyebrow">About</p>
+      <h2 class="section-title">
+        I design for the person<br> behind the screen<span class="italic">.</span>
+      </h2>
+      <p class="about-text">
+        I'm Hannah — a UI/UX designer currently studying User Experience &amp; Interaction Design
+        at Drexel University. What pulls me into a project isn't the interface itself, it's the person
+        using it — I like figuring out why someone thinks or hesitates the way they do, and using that
+        to make them feel more comfortable and confident the moment they open something I've designed.
+      </p>
+      <p class="about-text">
+        My process moves between research, wireframes, and high-fidelity prototypes — always circling
+        back to "how does this person feel using it?" I've designed for wellness apps, campus tools,
+        and retail, and I like carrying a project from that first conversation through to a built,
+        working interface.
+      </p>
+
+      <div class="about-skills">
+        <div class="skill-group">
+          <p class="skill-label">Skills</p>
+          <p class="skill-list">Ideation · UX Strategy · User Research · Visual Design · Design Systems · Web Development · Wireframing · Prototyping</p>
+        </div>
+        <div class="skill-group">
+          <p class="skill-label">Tools</p>
+          <p class="skill-list">Figma · Framer · Illustrator · Photoshop · InDesign · HTML5 / CSS3 · JavaScript · Java · React</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact" id="contact">
+  <div class="hero-bg"></div>
+  <div class="section-inner contact-grid">
+    <div data-reveal>
+      <p class="eyebrow eyebrow-onnavy">Contact</p>
+      <h2 class="section-title section-title-onnavy">
+        Let's make <br>something<span class="italic"> good.</span>
+      </h2>
+      <p class="contact-text">
+        Have a project in mind, or just want to say hi? My inbox is open.
+      </p>
+      <a href="mailto:hannahxpelingon@gmail.com" class="contact-email">hannahxpelingon@gmail.com</a>
+
+      <div class="contact-meta">
+        <span>+1 484-680-2023</span>
+        <span>Philadelphia, PA</span>
+      </div>
+
+      <div class="contact-social">
+        <a href="https://www.linkedin.com/in/hannahpelingon" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+
+    <form class="contact-form" id="contactForm" data-reveal novalidate>
+      <div class="form-row">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+        <span class="form-error" data-error="name"></span>
+      </div>
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        <span class="form-error" data-error="email"></span>
+      </div>
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <span class="form-error" data-error="message"></span>
+      </div>
+      <button type="submit" class="btn btn-onnavy">Send Message</button>
+      <p class="form-status" id="formStatus" role="status"></p>
+    </form>
+  </div>
+
+  <div class="section-inner contact-bottom">
+    <p>© <span id="year"></span> Hannah Pelingon</p>
+  </div>
+</section>
+
+<!-- ===== LIGHTBOX ===== -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image">&#8249;</button>
+  <div class="lightbox-frame">
+    <img class="lightbox-img" id="lightboxImg" src="" alt="">
+    <p class="lightbox-counter" id="lightboxCounter"></p>
+  </div>
+  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image">&#8250;</button>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
