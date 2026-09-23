@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     link.addEventListener('click', closeMenu);
   });
 
- const NAV_OFFSET = 90; // gap (px) to leave above a section when jumping to it
+ const NAV_OFFSET = 70; // gap (px) to leave above a section when jumping to it
 
   document.querySelectorAll('a[href^="#"]').forEach((link) => {
     link.addEventListener('click', (e) => {
