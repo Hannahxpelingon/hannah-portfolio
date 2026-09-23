@@ -932,6 +932,7 @@ a { color: inherit; text-decoration: none; }
   .nav-dropdown.open .nav-dropdown-menu {
     max-height: 220px;
     padding: 0.3rem 0;
+    transform: none;
   }
 
   .nav-toggle { display: flex; z-index: 101; }
