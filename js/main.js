@@ -40,6 +40,21 @@ document.addEventListener('DOMContentLoaded', () => {
     link.addEventListener('click', closeMenu);
   });
 
+ const NAV_OFFSET = 90; // gap (px) to leave above a section when jumping to it
+
+  document.querySelectorAll('a[href^="#"]').forEach((link) => {
+    link.addEventListener('click', (e) => {
+      const targetId = link.getAttribute('href').slice(1);
+      const target = document.getElementById(targetId);
+      if (!target) return;
+      e.preventDefault();
+      const top = target.getBoundingClientRect().top + window.scrollY - NAV_OFFSET;
+      window.scrollTo({ top, behavior: 'smooth' });
+      history.pushState(null, '', `#${targetId}`);
+    });
+  });
+
+
   /* ---------- "Project" dropdown ---------- */
   const navDropdown = document.getElementById('navDropdown');
   const navDropdownBtn = document.getElementById('navDropdownBtn');
