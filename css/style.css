@@ -160,6 +160,11 @@ a { color: inherit; text-decoration: none; }
   backdrop-filter: blur(10px);
   transition: padding 0.4s var(--ease), box-shadow 0.4s var(--ease);
 }
+
+section[id] {
+  scroll-margin-top: 170px;
+}
+
 .nav.scrolled {
   padding: 0.9rem var(--gutter);
   box-shadow: 0 1px 0 var(--dark-line);
