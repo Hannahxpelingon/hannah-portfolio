@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Freedom Fight Case Study — Hannah Pelingon</title>
+<meta name="description" content="Case study: translating Freedom Fight's mobile designs into a scalable desktop dashboard and designing the Premium Groups enrollment pages.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/case-study.css">
+</head>
+<body class="cs" data-accent="two">
+
+<div class="grain"></div>
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">hp.</a>
+
+    <nav class="nav-links" id="navLinks">
+      <div class="nav-dropdown" id="navDropdown">
+        <button class="nav-dropdown-btn" id="navDropdownBtn" aria-haspopup="true" aria-expanded="false">
+          Project <span class="nav-caret">⌄</span>
+        </button>
+        <div class="nav-dropdown-menu" id="navDropdownMenu">
+          <a href="case-study-freedom-fight.html">Freedom Fight Dashboard</a>
+          <a href="index.html#proj-three">IVM Thumbnail System</a>
+          <a href="index.html#proj-mc3">MC3 Dashboard Redesign</a>
+        </div>
+      </div>
+      <a href="index.html#about">About</a>
+      <a href="index.html#resume">Resume</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- ===== CASE STUDY HERO ===== -->
+<section class="hero cs-hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <a href="index.html#work" class="cs-back" data-reveal>&larr; All projects</a>
+    <p class="cs-kicker" data-reveal>Case study &middot; Freedom Fight</p>
+    <h1 class="cs-title" data-reveal>
+      <em>Mobile</em> flows, rebuilt for a connected <em>desktop</em> experience.
+    </h1>
+    <p class="cs-lede" data-reveal>
+      Freedom Fight is an educational program built around courses and a supportive community.
+      I translated its mobile designs into a scalable desktop dashboard, and designed the
+      Premium Groups pages where members find and enroll in a small group.
+    </p>
+  </div>
+</section>
+
+<!-- hero image overlaps the dark band -->
+<div class="cs-hero-media section-inner">
+  <figure class="cs-fig cs-fig--hero" data-reveal>
+    <a href="assets/work/freedom-fight/01-dashboard-home.png" data-gallery="dashboard">
+      <img src="assets/work/freedom-fight/01-dashboard-home.png" alt="Freedom Fight desktop dashboard with check-ins, messages, and program path" width="1440" height="1024">
+    </a>
+  </figure>
+</div>
+
+<!-- ===== AT A GLANCE ===== -->
+<section class="cs-section cs-section--tight">
+  <div class="section-inner">
+    <dl class="cs-meta" data-reveal>
+      <div>
+        <dt>My role</dt>
+        <dd>UI/UX Designer</dd>
+      </div>
+      <div>
+        <dt>Timeline</dt>
+        <dd>Four weeks</dd>
+      </div>
+      <div>
+        <dt>Platform</dt>
+        <dd>Desktop web app &amp; marketing site pages</dd>
+      </div>
+      <div>
+        <dt>Worked with</dt>
+        <dd>The Freedom Fight design team</dd>
+      </div>
+    </dl>
+  </div>
+</section>
+
+<!-- ===== OVERVIEW ===== -->
+<section class="cs-section">
+  <div class="section-inner cs-split">
+    <div class="cs-split-label" data-reveal>
+      <span class="eyebrow">Overview</span>
+      <h2 class="cs-h2">Two pieces of one program.</h2>
+    </div>
+    <div class="cs-split-body" data-reveal>
+      <p class="cs-text">
+        Freedom Fight pairs educational courses with community and accountability tools. Working
+        alongside my team, I contributed in two ways: I took mobile designs and made them work as a
+        scalable desktop dashboard, and I owned the Premium Groups pages, from mapping the user flow
+        to designing the screens.
+      </p>
+      <nav class="cs-toc" aria-label="Case study sections">
+        <a href="#dashboard">
+          <span class="cs-toc-num">01</span>
+          <span class="cs-toc-title">Mobile to desktop dashboard</span>
+          <span class="cs-toc-arrow" aria-hidden="true">&darr;</span>
+          <span class="cs-toc-desc">Reworking hierarchy so the most important things are seen first on a larger screen.</span>
+        </a>
+        <a href="#premium-groups">
+          <span class="cs-toc-num">02</span>
+          <span class="cs-toc-title">Premium Groups pages</span>
+          <span class="cs-toc-arrow" aria-hidden="true">&darr;</span>
+          <span class="cs-toc-desc">Mapping the core flow, then designing how members find, apply to, and join a group.</span>
+        </a>
+      </nav>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PART 1: DASHBOARD ===== -->
+<section class="cs-section cs-section--alt" id="dashboard">
+  <div class="section-inner">
+    <div class="cs-split">
+      <div class="cs-split-label" data-reveal>
+        <span class="eyebrow">Part one</span>
+        <h2 class="cs-h2">From a phone screen to a desktop dashboard.</h2>
+      </div>
+      <div class="cs-split-body" data-reveal>
+        <h3 class="cs-h3">The challenge</h3>
+        <p class="cs-text">
+          A phone shows one thing at a time. A desktop shows everything at once, so simply stretching
+          the mobile screens would have left members with a wall of equally loud content. My job was to
+          decide what needs to be seen first.
+        </p>
+
+        <h3 class="cs-h3">What I prioritized on the home dashboard</h3>
+        <ul class="cs-list">
+          <li><strong>The daily habit comes first.</strong> Check-ins and the current streak sit at the top left, with the day's tasks one click away.</li>
+          <li><strong>Community stays in view.</strong> New messages sit beside the check-in card so a member sees who is reaching out without leaving the page.</li>
+          <li><strong>Progress is always visible.</strong> "Your Path" shows where the member is in the 30 Day Challenge and what unlocks next.</li>
+        </ul>
+
+        <aside class="cs-wash cs-wash--first">
+        <div class="cs-glass">
+          <p class="cs-glass-text"><strong>Why this order.</strong> Add how you decided what to show first, and whether you reviewed it or changed anything with the team.</p>
+          <svg class="cs-dots" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="5" r="2.6"/><circle cx="28.8" cy="7.9" r="2.4"/><circle cx="34.3" cy="15.4" r="2.2"/><circle cx="34.3" cy="24.6" r="2"/><circle cx="28.8" cy="32.1" r="1.8"/><circle cx="20" cy="35" r="1.6"/><circle cx="11.2" cy="32.1" r="1.8"/><circle cx="5.7" cy="24.6" r="2"/><circle cx="5.7" cy="15.4" r="2.2"/><circle cx="11.2" cy="7.9" r="2.4"/></svg>
+        </div>
+      </aside>
+      </div>
+    </div>
+
+    <!-- annotated courses dashboard -->
+    <div class="cs-annot" data-reveal>
+      <div class="cs-annot-fig">
+        <figure class="cs-fig">
+          <div class="cs-pinwrap">
+            <a href="assets/work/freedom-fight/05-courses-dashboard.png" data-gallery="dashboard">
+              <img src="assets/work/freedom-fight/05-courses-dashboard.png" alt="Courses dashboard with a persistent sidebar, streaks, and course progress" loading="lazy">
+            </a>
+            <span class="cs-pin" data-n="1" style="left:24.5%; top:11%">1</span>
+            <span class="cs-pin" data-n="2" style="left:64.5%; top:20%">2</span>
+            <span class="cs-pin" data-n="3" style="left:56.5%; top:45%">3</span>
+          </div>
+        </figure>
+      </div>
+      <ol class="cs-notes">
+        <li class="cs-note" data-n="1">
+          <span class="cs-note-n">1</span>
+          <div>
+            <h3>Navigation grows with the screen</h3>
+            <p>On desktop the mobile tab bar becomes a persistent sidebar: Home, Messages and Courses, then Community and Tools.</p>
+          </div>
+        </li>
+        <li class="cs-note" data-n="2">
+          <span class="cs-note-n">2</span>
+          <div>
+            <h3>Streaks next to the daily action</h3>
+            <p>Purity and check-in streaks sit above a single Check-In button.</p>
+          </div>
+        </li>
+        <li class="cs-note" data-n="3">
+          <span class="cs-note-n">3</span>
+          <div>
+            <h3>Progress with a clear next step</h3>
+            <p>Course progress has one Continue button, so members pick up where they left off.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+    <!-- check-in sequence -->
+    <div class="cs-seq-head" data-reveal>
+      <span class="eyebrow">The daily check-in</span>
+      <p class="cs-text">One screen per question, brought over from mobile as a step-by-step flow.</p>
+    </div>
+    <div class="cs-seq" data-reveal>
+      <figure class="cs-fig cs-seq-item">
+        <span class="cs-seq-n">01</span>
+        <a href="assets/work/freedom-fight/02-checkin-emotions.png" data-gallery="dashboard">
+          <img src="assets/work/freedom-fight/02-checkin-emotions.png" alt="Daily check-in on desktop: emotion selector" loading="lazy">
+        </a>
+        <figcaption class="cs-figcap">How are you feeling?</figcaption>
+      </figure>
+      <figure class="cs-fig cs-seq-item">
+        <span class="cs-seq-n">02</span>
+        <a href="assets/work/freedom-fight/03-checkin-zone.png" data-gallery="dashboard">
+          <img src="assets/work/freedom-fight/03-checkin-zone.png" alt="Daily check-in on desktop: zone selection" loading="lazy">
+        </a>
+        <figcaption class="cs-figcap">Select your zone</figcaption>
+      </figure>
+      <figure class="cs-fig cs-seq-item">
+        <span class="cs-seq-n">03</span>
+        <a href="assets/work/freedom-fight/04-checkin-faster-scale.png" data-gallery="dashboard">
+          <img src="assets/work/freedom-fight/04-checkin-faster-scale.png" alt="Daily check-in on desktop: FASTER scale behavior checklist" loading="lazy">
+        </a>
+        <figcaption class="cs-figcap">The FASTER scale</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PART 2: PREMIUM GROUPS ===== -->
+<section class="cs-section" id="premium-groups">
+  <div class="section-inner">
+    <div class="cs-split">
+      <div class="cs-split-label" data-reveal>
+        <span class="eyebrow">Part two</span>
+        <h2 class="cs-h2">Helping members find the right group.</h2>
+      </div>
+      <div class="cs-split-body" data-reveal>
+        <h3 class="cs-h3">The challenge</h3>
+        <p class="cs-text">
+          Premium Groups are small, committed groups led by a certified leader, so joining one is a real
+          decision. Members need to find a group that fits their week, apply to it, and be matched with the
+          leader, without feeling lost in a long process.
+        </p>
+        <h3 class="cs-h3">Mapping the core flow</h3>
+        <p class="cs-text">
+          Before designing any screens, I mapped the path from "I'm curious" to "I'm in." Four steps
+          became the backbone of the page, and they sit at the top of it so the whole process is clear
+          before members pick a group.
+        </p>
+      </div>
+    </div>
+
+    <ol class="cs-flow" data-reveal>
+      <li>
+        <span class="cs-flow-num">1</span>
+        <h3>Find your group</h3>
+        <p>Browse groups that fit the next seven months of availability.</p>
+      </li>
+      <li>
+        <span class="cs-flow-num">2</span>
+        <h3>Submit your application</h3>
+        <p>Apply to one group at a time.</p>
+      </li>
+      <li>
+        <span class="cs-flow-num">3</span>
+        <h3>Interview with the leader</h3>
+        <p>If accepted, schedule a 15-minute interview to confirm a mutual fit.</p>
+      </li>
+      <li>
+        <span class="cs-flow-num">4</span>
+        <h3>Secure your spot</h3>
+        <p>Pay the first month's deposit to reserve your place.</p>
+      </li>
+    </ol>
+
+    <!-- annotated group finder -->
+    <div class="cs-annot cs-annot--finder" data-reveal>
+      <div class="cs-annot-fig">
+        <figure class="cs-fig">
+          <div class="cs-pinwrap">
+            <a href="assets/work/freedom-fight/premium-groups/finder-filter-open.jpg" data-gallery="groups">
+              <img src="assets/work/freedom-fight/premium-groups/finder-filter-open.jpg" alt="Premium Groups page: four-step flow, group cards, and the filters panel open" loading="lazy">
+            </a>
+            <span class="cs-pin" data-n="1" style="left:50%; top:15.8%">1</span>
+            <span class="cs-pin" data-n="2" style="left:96.5%; top:28.5%">2</span>
+            <span class="cs-pin" data-n="3" style="left:5%; top:33.6%">3</span>
+            <span class="cs-pin" data-n="4" style="left:95.5%; top:60.5%">4</span>
+            <span class="cs-pin" data-n="5" style="left:41%; top:94.2%">5</span>
+          </div>
+        </figure>
+      </div>
+      <div class="cs-annot-side">
+        <span class="eyebrow">Design decisions</span>
+        <h2 class="cs-h2">Making a big choice feel manageable.</h2>
+        <ol class="cs-notes">
+          <li class="cs-note" data-n="1">
+            <span class="cs-note-n">1</span>
+            <div>
+              <h3>The whole process, up front</h3>
+              <p>Find, apply, interview, secure a spot: the path is visible before anyone picks a group.</p>
+            </div>
+          </li>
+          <li class="cs-note" data-n="2">
+            <span class="cs-note-n">2</span>
+            <div>
+              <h3>Three ways to narrow down</h3>
+              <p>Filter by availability, who the group is for, and day of the week.</p>
+            </div>
+          </li>
+          <li class="cs-note" data-n="3">
+            <span class="cs-note-n">3</span>
+            <div>
+              <h3>Cards that answer the key questions</h3>
+              <p>Spots left, meeting time, projected start and end dates, and the leader with a short bio.</p>
+            </div>
+          </li>
+          <li class="cs-note" data-n="4">
+            <span class="cs-note-n">4</span>
+            <div>
+              <h3>Full groups stay visible</h3>
+              <p>A full group is dimmed with a clear "Group Full" state instead of disappearing.</p>
+            </div>
+          </li>
+          <li class="cs-note" data-n="5">
+            <span class="cs-note-n">5</span>
+            <div>
+              <h3>A way out of a dead end</h3>
+              <p>When no time works, "Suggest a time" lets members mark their weekly availability so a new group can be formed around demand.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SUGGEST A TIME FLOW (dark plate) ===== -->
+<section class="cs-plate">
+  <div class="section-inner">
+    <div class="cs-plate-head" data-reveal>
+      <span class="eyebrow">When nothing fits</span>
+      <h2 class="cs-h2">Suggest a time.</h2>
+      <p class="cs-text">A short flow that turns "no group works for me" into information the program can act on, and ends with a next step instead of a dead end.</p>
+    </div>
+    <div class="cs-modals" data-reveal>
+      <figure class="cs-fig">
+        <a href="assets/work/freedom-fight/premium-groups/suggest-time.jpg" data-gallery="groups">
+          <img src="assets/work/freedom-fight/premium-groups/suggest-time.jpg" alt="Suggest a group time modal with a weekly availability grid" loading="lazy">
+        </a>
+        <figcaption class="cs-figcap"><b>01</b> Pick your hours</figcaption>
+      </figure>
+      <span class="cs-arrow" aria-hidden="true">&rarr;</span>
+      <figure class="cs-fig">
+        <a href="assets/work/freedom-fight/premium-groups/suggest-time-selected.jpg" data-gallery="groups">
+          <img src="assets/work/freedom-fight/premium-groups/suggest-time-selected.jpg" alt="Suggest a group time modal with a time zone toggle and selected availability" loading="lazy">
+        </a>
+        <figcaption class="cs-figcap"><b>02</b> Availability selected</figcaption>
+      </figure>
+      <span class="cs-arrow" aria-hidden="true">&rarr;</span>
+      <figure class="cs-fig">
+        <a href="assets/work/freedom-fight/premium-groups/thank-you.jpg" data-gallery="groups">
+          <img src="assets/work/freedom-fight/premium-groups/thank-you.jpg" alt="Thank you confirmation with options to view groups or submit a general application" loading="lazy">
+        </a>
+        <figcaption class="cs-figcap"><b>03</b> Confirmation and next step</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===== COMPARE + CONTEXT ===== -->
+<section class="cs-section">
+  <div class="section-inner">
+    <div class="cs-split">
+      <div class="cs-split-label" data-reveal>
+        <span class="eyebrow">Filtering</span>
+        <h2 class="cs-h2">Before and after.</h2>
+        <p class="cs-text cs-hint">Drag the handle to compare the full list with a filtered one.</p>
+      </div>
+      <div class="cs-split-body" data-reveal>
+        <div class="cs-compare" id="compare" style="--pos:50%">
+          <img src="assets/work/freedom-fight/premium-groups/finder.jpg" alt="Premium Groups page with six group cards" loading="lazy">
+          <img class="cs-compare-top" src="assets/work/freedom-fight/premium-groups/finder-filtered.jpg" alt="Premium Groups page after filters are applied, showing fewer groups" loading="lazy">
+          <span class="cs-compare-tag cs-compare-tag--l">Default</span>
+          <span class="cs-compare-tag cs-compare-tag--r">Filtered</span>
+          <input type="range" min="0" max="100" value="50" aria-label="Compare the default group finder with the filtered view">
+          <span class="cs-compare-handle" aria-hidden="true"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cs-split cs-split--after">
+      <div class="cs-split-label" data-reveal>
+        <span class="eyebrow">In context</span>
+        <h2 class="cs-h2">Where it lives on the site.</h2>
+      </div>
+      <div class="cs-split-body" data-reveal>
+        <div class="cs-pair">
+          <figure class="cs-fig">
+            <a href="assets/work/freedom-fight/premium-groups/pricing.jpg" data-gallery="groups">
+              <img src="assets/work/freedom-fight/premium-groups/pricing.jpg" alt="Plans and pricing comparing Free, The FF Program, and Premium Groups" loading="lazy">
+            </a>
+            <figcaption class="cs-figcap">Plans &amp; pricing</figcaption>
+          </figure>
+          <figure class="cs-fig">
+            <a href="assets/work/freedom-fight/premium-groups/hero.jpg" data-gallery="groups">
+              <img src="assets/work/freedom-fight/premium-groups/hero.jpg" alt="Premium Groups landing section: Go Further Faster" loading="lazy">
+            </a>
+            <figcaption class="cs-figcap">Landing section</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <aside class="cs-wash" data-reveal>
+        <div class="cs-glass">
+          <p class="cs-glass-text"><strong>A decision.</strong> Mapping the flow, I started with how groups are organized: the types of groups, their set times, and who runs them. I also planned for the edge cases, like a full group, or a time that doesn't work, so people could request one instead of hitting a dead end.</p>
+          <svg class="cs-dots" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="5" r="2.6"/><circle cx="28.8" cy="7.9" r="2.4"/><circle cx="34.3" cy="15.4" r="2.2"/><circle cx="34.3" cy="24.6" r="2"/><circle cx="28.8" cy="32.1" r="1.8"/><circle cx="20" cy="35" r="1.6"/><circle cx="11.2" cy="32.1" r="1.8"/><circle cx="5.7" cy="24.6" r="2"/><circle cx="5.7" cy="15.4" r="2.2"/><circle cx="11.2" cy="7.9" r="2.4"/></svg>
+        </div>
+      </aside>
+  </div>
+</section>
+
+<!-- ===== RESULTS ===== -->
+<section class="cs-section cs-section--alt">
+  <div class="section-inner cs-split">
+    <div class="cs-split-label" data-reveal>
+      <span class="eyebrow">Outcome</span>
+      <h2 class="cs-h2">What came of it.</h2>
+    </div>
+    <div class="cs-split-body" data-reveal>
+      <div class="cs-wash cs-wash--row">
+        <div class="cs-glass">
+          <p class="cs-glass-text"><strong>Results.</strong> The desktop dashboard and Premium Groups pages were designed over four weeks and implemented by the team.</p>
+          <svg class="cs-dots" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="5" r="2.6"/><circle cx="28.8" cy="7.9" r="2.4"/><circle cx="34.3" cy="15.4" r="2.2"/><circle cx="34.3" cy="24.6" r="2"/><circle cx="28.8" cy="32.1" r="1.8"/><circle cx="20" cy="35" r="1.6"/><circle cx="11.2" cy="32.1" r="1.8"/><circle cx="5.7" cy="24.6" r="2"/><circle cx="5.7" cy="15.4" r="2.2"/><circle cx="11.2" cy="7.9" r="2.4"/></svg>
+        </div>
+        <div class="cs-glass">
+          <p class="cs-glass-text"><strong>My part.</strong> I translated the mobile designs into the desktop dashboard, focusing on hierarchy and what users see first, and mapped and designed the Premium Groups enrollment flow.</p>
+          <svg class="cs-dots" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="5" r="2.6"/><circle cx="28.8" cy="7.9" r="2.4"/><circle cx="34.3" cy="15.4" r="2.2"/><circle cx="34.3" cy="24.6" r="2"/><circle cx="28.8" cy="32.1" r="1.8"/><circle cx="20" cy="35" r="1.6"/><circle cx="11.2" cy="32.1" r="1.8"/><circle cx="5.7" cy="24.6" r="2"/><circle cx="5.7" cy="15.4" r="2.2"/><circle cx="11.2" cy="7.9" r="2.4"/></svg>
+        </div>
+        <div class="cs-glass">
+          <p class="cs-glass-text"><strong>Learned.</strong> Moving from mobile to desktop isn't about filling the extra space. It's about deciding what the user needs to see first. Mapping the whole flow, including full groups and times that don't fit, showed me how much of good UX is planning for the moments when things don't go perfectly.</p>
+          <svg class="cs-dots" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="5" r="2.6"/><circle cx="28.8" cy="7.9" r="2.4"/><circle cx="34.3" cy="15.4" r="2.2"/><circle cx="34.3" cy="24.6" r="2"/><circle cx="28.8" cy="32.1" r="1.8"/><circle cx="20" cy="35" r="1.6"/><circle cx="11.2" cy="32.1" r="1.8"/><circle cx="5.7" cy="24.6" r="2"/><circle cx="5.7" cy="15.4" r="2.2"/><circle cx="11.2" cy="7.9" r="2.4"/></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== NEXT PROJECT ===== -->
+<section class="cs-next">
+  <div class="section-inner">
+    <p class="eyebrow">Next project</p>
+    <a href="index.html#proj-three" class="cs-next-link">
+      Impact Video Ministries <span aria-hidden="true">&rarr;</span>
+    </a>
+    <a href="index.html#work" class="cs-next-all">Back to all projects</a>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<section class="contact cs-footer">
+  <div class="hero-bg"></div>
+  <div class="section-inner cs-footer-inner">
+    <div>
+      <p class="eyebrow eyebrow-onnavy">Contact</p>
+      <h2 class="section-title section-title-onnavy">Let's make <span class="italic">something good.</span></h2>
+      <a href="mailto:hannahxpelingon@gmail.com" class="contact-email">hannahxpelingon@gmail.com</a>
+    </div>
+    <div class="contact-bottom">
+      <p>© <span id="year"></span> Hannah Pelingon</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== LIGHTBOX ===== -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image">&#8249;</button>
+  <div class="lightbox-frame">
+    <img class="lightbox-img" id="lightboxImg" src="" alt="">
+    <p class="lightbox-counter" id="lightboxCounter"></p>
+  </div>
+  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image">&#8250;</button>
+</div>
+
+<script src="js/case-study.js"></script>
+</body>
+</html>
